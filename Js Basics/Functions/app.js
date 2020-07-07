@@ -8,7 +8,7 @@
 // //make use of the function = invoke/calling
 // greeting();
 
-//====funtion wth parameters and arguments====
+//====funtion wth parameters====
 
 // function message() {
 //   console.log("Am not for messaging");
@@ -24,10 +24,18 @@
 
 //Remeber the parameters gives a way to pass in argument
 
-//Without parameters we cannot use arguements
+//With  parameters
+// function addTwoNumbers(a) {
+//   console.log(a);
+// }
 
-function addTwoNumbers(a, b) {
-  console.log(a + b);
+// addTwoNumbers();
+
+//=====FUNCTION RETURN KEYWORD===
+
+function sayHello(name, message) {
+  var myMsg = `${name} ${message}`;
+  return myMsg;
 }
-
-addTwoNumbers(90, 10); //arguemnts
+var result = sayHello("Joe", "Good afternoon");
+console.log(result);
